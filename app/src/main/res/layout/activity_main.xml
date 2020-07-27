@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEEEF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/userGeneratorBTN"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generator Random User"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/txtbg"
+        android:padding="15dp"/>
+
+    <LinearLayout
+        android:layout_above="@+id/userGeneratorBTN"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, My name is"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/userNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dean Martin"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/userMailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="deann.martin@email.com"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_baseline_mail_24"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/txtbg"
+            android:layout_margin="10dp"
+            android:drawableEnd="@drawable/ic_baseline_file_copy_24"/>
+
+        <TextView
+            android:id="@+id/userBirthDayTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="08/04/1998"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/txtbg"
+            android:layout_margin="10dp"
+            android:drawableEnd="@drawable/ic_baseline_file_copy_24"/>
+
+        <TextView
+            android:id="@+id/userAddressTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4224 Green Road"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/txtbg"
+            android:layout_margin="10dp"
+            android:drawableEnd="@drawable/ic_baseline_file_copy_24"/>
+
+        <TextView
+            android:id="@+id/userPhoneTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(021)-722-9595"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_baseline_call_24"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/txtbg"
+            android:layout_margin="10dp"
+            android:drawableEnd="@drawable/ic_baseline_file_copy_24"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
